@@ -1,0 +1,25 @@
+{
+  "name": "prixon-flash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start": "node ./dist/index.js",
+    "dev": "rimraf dist && tsc-watch --onSuccess \"node ./dist/index.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bonjour": "^3.5.10",
+    "@types/node": "^20.6.0",
+    "rimraf": "^5.0.1",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "adb-ts": "^4.0.4",
+    "axios": "^1.5.0",
+    "bonjour": "^3.5.0"
+  }
+}
